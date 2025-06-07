@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5cg0t4jwbpjb"]
+
+[ext_resource type="Texture2D" uid="uid://rgrkmlnyec67" path="res://icon.svg" id="1_g0iwo"]
+[ext_resource type="Script" uid="uid://be6sh2f2g2sf7" path="res://Scripts/card_base.gd" id="1_sri0f"]
+
+[node name="CardBase" type="Node2D"]
+script = ExtResource("1_sri0f")
+
+[node name="CardBaseSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_g0iwo")
+
+[node name="CardImage" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CardImage"]
+
+[node name="CardCost" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CardCost"]
+
+[node name="Label" type="Label" parent="CardCost"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardName" type="Node2D" parent="."]
+
+[node name="Label" type="Label" parent="CardName"]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="CardDescription" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
