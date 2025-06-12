@@ -4,9 +4,11 @@
 [ext_resource type="Script" uid="uid://be6sh2f2g2sf7" path="res://Scripts/card_base.gd" id="1_sri0f"]
 
 [node name="CardBase" type="Node2D"]
+position = Vector2(495, 301)
 script = ExtResource("1_sri0f")
 
 [node name="CardBaseSprite" type="Sprite2D" parent="."]
+scale = Vector2(1.55469, 1.90625)
 texture = ExtResource("1_g0iwo")
 
 [node name="CardImage" type="Node2D" parent="."]
@@ -17,16 +19,25 @@ texture = ExtResource("1_g0iwo")
 
 [node name="Sprite2D" type="Sprite2D" parent="CardCost"]
 
-[node name="Label" type="Label" parent="CardCost"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="CostLabel" type="Label" parent="CardCost"]
+offset_left = 42.0
+offset_top = -111.0
+offset_right = 82.0
+offset_bottom = -88.0
+metadata/_edit_use_anchors_ = true
 
 [node name="CardName" type="Node2D" parent="."]
 
 [node name="Label" type="Label" parent="CardName"]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -87.0
+offset_top = -111.0
+offset_right = 43.0
+offset_bottom = -88.0
+metadata/_edit_use_anchors_ = true
 
 [node name="CardDescription" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = -86.0
+offset_top = 86.0
+offset_right = 87.0
+offset_bottom = 109.0
+metadata/_edit_use_anchors_ = true
