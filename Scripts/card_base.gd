@@ -10,6 +10,14 @@ class_name Card extends Node2D
 @onready var DescLabel: Label = $CardDescription
 
 func _ready():
-	CostLabel.set_text(str(CardCost))
-	NameLabel.set_text(CardName)
-	DescLabel.set_text(CardDescription)
+	set_value(CardCost, CardName, CardDescription)
+	visible = false
+
+func set_value(_cost: int, _name: String, _desc: String):
+	CardName = _name
+	CardDescription = _desc
+	CardCost = _cost
+	
+	CostLabel.set_text(str(_cost))
+	NameLabel.set_text(_name)
+	DescLabel.set_text(_desc)
