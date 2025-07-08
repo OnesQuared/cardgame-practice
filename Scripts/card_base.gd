@@ -3,7 +3,7 @@ class_name Card extends Node2D
 @export var CardName: String = "Name"
 @export var CardDescription: String = "Description"
 @export var CardCost: int = 1
-@export var CardImage: Node2D
+@export var CardImage: Sprite2D
 
 @onready var CostLabel: Label = $CardCost/CostLabel
 @onready var NameLabel: Label = $CardName/Label
@@ -11,7 +11,7 @@ class_name Card extends Node2D
 
 func _ready():
 	set_value(CardCost, CardName, CardDescription)
-	visible = false
+
 
 func set_value(_cost: int, _name: String, _desc: String):
 	CardName = _name
